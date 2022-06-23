@@ -1,5 +1,8 @@
 /* DEFAULT FONT SIZE IS 16px */
 
+/* an ID can only be used once - it is truly unique
+a CLASS can be used more than one time */
+
 h1,
 h2,
 h3,
@@ -36,17 +39,32 @@ p {
 
 /* the descandant selector
 goes to the child element and sets size to 16px but this is not a good idea */
-footer p {
+/* footer p {
   font-size: 16px;
-}
+} */
 
 /* you do not style ol and ul elements */
 li {
   font-size: 20px;
 }
 
-/* you can do a 3 level descent but this is not a good idea either
-you need class and ID selectors */
-article header p {
+/*  # is the ID selector */
+#author {
   font-style: italic;
+  font-size: 18px;
+}
+
+#copywright {
+  font-size: 16px;
+}
+
+/* . is the CLASS selector */
+/* if you select all 3 p's, all 3 applications of css will apply */
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
 }
