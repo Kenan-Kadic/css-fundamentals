@@ -1,24 +1,20 @@
-<!-- HTML is all about elements, atrributes, content and some entities with & sign -->
-
 <!DOCTYPE html>
-<!-- this doctype tells browser that we are using html -->
 <html lang="en">
-  <!-- you always need one head element and one body element -->
-  <!-- head is the stuff that is not visible in browser - like page title
-  link to css files or js or other things -->
   <head>
-    <!-- UTF 8 means the characters will be the simple characters we use in the English language -->
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
     <title>The Basic Language of the Web: HTML</title>
+    <!-- <style>
+      internal styles should almost never be used
+      h1 {
+        color: blue;
+      }
+    </style> -->
   </head>
   <body>
-    <!-- body is all the elements that are visible on the page -->
-    <!-- each page should only have one H1 heading-->
-
-    <!-- the header is the top part of a web document or top part of smaller unit -->
     <header>
+      <!-- inline styles should never be used -->
       <h1>📘 The Code Magazine</h1>
-      <!-- # means link back to top of current page -->
       <nav>
         <a href="blog.html">Blog</a>
         <a href="#">Challenges</a>
@@ -26,8 +22,6 @@
         <a href="#">CSS Grid</a>
       </nav>
     </header>
-
-    <!-- article is a thing from the real world not just an article -->
     <article>
       <header>
         <h2>The Basic Language of the Web: HTML</h2>
@@ -38,10 +32,7 @@
           width="50"
           height="50"
         />
-        <!-- to make bold always use strong element -->
         <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
-        <!-- attributes like src are pieces of data we can use to describe elements -->
-        <!-- ALT helps people who can not see know what a picture is about -->
         <img
           src="img/post-img.jpg"
           alt="HTML code on a screen"
@@ -52,7 +43,6 @@
 
       <p>
         All modern websites and web applications are built using three
-        <!-- for italic use em -->
         <em>fundamental</em>
         technologies: HTML, CSS and JavaScript. These are the languages of the
         web.
@@ -79,15 +69,12 @@
       <ol>
         <li>The opening tag</li>
         <li>The closing tag</li>
-        <li>
-          The actual element You can learn more at the
-          <!-- the a is for anchor -->
-          <a href="https://developer.mozilla.org/en-US/" target="_blank"
-            >MDN Web Docs.</a
-          >
-        </li>
+        <li>The actual element</li> 
       </ol>
-
+       <p>You can learn more at the
+        <a href="https://developer.mozilla.org/en-US/" target="_blank"
+          >MDN Web Docs.</a
+        ></p> 
       <h3>Why should you learn HTML?</h3>
 
       <p>
@@ -109,25 +96,22 @@
     </article>
     <!-- Aside is aside information that is related to the main article but not part of it--it can be a sidebar -->
     <aside>
-      <h3>Related posts</h3>
+      <h4>Related posts</h4>
       <ul>
+      
         <li><img src="img/related-1.jpg" alt="man coding on computer" width="75" height="75"></img><a href="#">How to Learn Web Development</a></li>
         <p>By Jonas Schmedtmann</p>
-      <li><img src="img/related-2.jpg" alt="Lightning bolt" width="75" height="75"><a href="#">The Unknown Powers of CSS</a>
+      
+        <li><img src="img/related-2.jpg" alt="Lightning bolt" width="75" height="75"><a href="#">The Unknown Powers of CSS</a>
         <p>By Jim Dillon</p>
-      <li><img src="img/related-3.jpg" alt="Code on computer screen" width="75" height="75"><a href="#">Why JavaScript is Awsome</a></li>
-      <p>by Matilda</p>
+      
+        <li><img src="img/related-3.jpg" alt="Code on computer screen" width="75" height="75"><a href="#">Why JavaScript is Awsome</a></li>
+      
+        <p>by Matilda</p>
       </ul>
     </aside>
 
-    <footer>Copyright &copy; 2027 by The Code Magazine</footer>
+    <footer><p>Copyright &copy; 2027 by The Code Magazine</p></footer>
   </body>
 </html>
 
-<!-- STRONG and EM are the reason why things are done...to make them strongly appear and emphasize the italic text--Welcome to HTML5 -->
-
-<!-- all text should be in some form of an element -->
-
-<!--HTML5 brought SEMANTIC HTML is to consider what an element means instead of how it looks on page. STRONG instead of b and EM instead of the small i. Also notice how you used nav instead of div -the nav box implies a meaning not just a generic div.-->
-
-<!-- Semantic HTML helps with SEO Search Engine Optimization-->
