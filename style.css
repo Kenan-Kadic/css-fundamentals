@@ -3,6 +3,28 @@
 /* an ID can only be used once - it is truly unique
 a CLASS can be used more than one time */
 
+/* COLORS have numbers from 0 to 255 - 16.8 million colors
+It has red green and blue to choose from 
+
+RGB NOTATION
+There is an RGB NOTATION and a HEXADECIMAL NOTATION
+rbg(0, 255, 255, 0.3) Here we added ALPHA - 0.3 for transparancy  
+
+HEXADECIMAL NOTATION
+This is much more often used - almost alawys
+goes from zero to ff - ff is like 255
+there are 16 different numbers and letters
+these are written with # and the values for red green and blue
+there is usually a color picker
+this hexadecimal notation has a shorthand - like #0ff
+
+THE GRAY COLOR
+when 3 colors are exactly the same, you get a gray color
+there are 256 pure versions of gray to choose from
+
+#444 is good for text color
+*/
+
 h1,
 h2,
 h3,
@@ -15,6 +37,7 @@ li {
 h1 {
   font-size: 26px;
   text-transform: uppercase;
+  color: #1098ad;
   font-style: italic;
 }
 
