@@ -1,5 +1,7 @@
 /* DEFAULT FONT SIZE IS 16px */
 
+/* UNIVERSAL SELECTOR * Another way to add some styles to ALL ELEMENTS */
+
 /* an ID can only be used once - it is truly unique
 a CLASS can be used more than one time */
 
@@ -24,16 +26,6 @@ there are 256 pure versions of gray to choose from
 
 #444 is good for text color
 */
-
-h1,
-h2,
-h3,
-h4,
-p,
-li {
-  font-family: sans-serif;
-  color: #444;
-}
 
 h1,
 h2,
@@ -84,7 +76,7 @@ li {
   font-size: 18px;
 }
 
-#copywright {
+#copyright {
   font-size: 16px;
 }
 
@@ -174,4 +166,41 @@ a:hover {
 a:active {
   font-style: italic;
   background-color: black;
+}
+
+/* RESOLVING CONFLICT EXAMPLE */
+#copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green;
+}
+
+/* CSS elements can inherit styles from parent elements to child elements
+It is mostly the ones about text that get inherited */
+
+body {
+  color: #444;
+  font-family: sans-serif;
+  /* this will make all the colors red except the ones that are overwriting red with their own color declarations */
+}
+
+/* the body selector does not apply to all elements
+  there is inheritence going on
+  they are passed down to the children
+  many styles do not get inherited - most of the ones related to text do.
+*/
+
+/* INHERITANCE also works on a smaller level */
+nav {
+  font-size: 18px;
 }
