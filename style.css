@@ -1,5 +1,7 @@
 /* DEFAULT FONT SIZE IS 16px */
 
+/* MARGINS collapse in CSS - 15 down and 40 up does not give you a space of 55 */
+
 /* UNIVERSAL SELECTOR * Another way to add some styles to ALL ELEMENTS */
 
 /* an ID can only be used once - it is truly unique
@@ -27,6 +29,12 @@ there are 256 pure versions of gray to choose from
 #444 is good for text color
 */
 
+/* starting with a global reset is very common  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 h1,
 h2,
 h3 {
@@ -42,10 +50,13 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 h4 {
@@ -54,9 +65,38 @@ h4 {
   text-align: center;
 }
 
+.main-header {
+  background-color: #f7f7f7;
+  /* padding: 20px;
+  padding-right: 40px;
+  padding-left: 40px; 
+  a shorthand */
+  padding: 20px and 40px;
+  /* most of the time you use margin bottom but NOT BOTH TOP and bottom */
+  margin-bottom: 60px;
+}
+/* left size of color picker is always all of the grays no matter what color */
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+/* lets try an element selector */
+aside {
+  padding-top: 50px 0;
+  background-color: #f7f7f7;
+  /* how to make a border 
+  you can also do top and bottom here
+  */
+
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+
 p {
   font-size: 22px;
   line-height: 1.5;
+  margin-bottom: 15px;
 }
 
 /* the descandant selector
@@ -65,9 +105,20 @@ goes to the child element and sets size to 16px but this is not a good idea */
   font-size: 16px;
 } */
 
+ol,
+ul {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
 /* you usually do not style ol and ul elements */
 li {
   font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
 }
 
 /*  # is the ID selector */
@@ -89,22 +140,6 @@ li {
 
 .related {
   list-style: none;
-}
-
-.main-header {
-  background-color: #f7f7f7;
-}
-/* left size of color picker is always all of the grays no matter what color */
-
-/* lets try an element selector */
-aside {
-  background-color: #f7f7f7;
-  /* how to make a border 
-  you can also do top and bottom here
-  */
-
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
 }
 
 /* body {
