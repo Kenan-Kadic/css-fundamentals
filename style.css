@@ -66,14 +66,16 @@ h4 {
 }
 
 .main-header {
+  height: 80px;
+  padding: 20px 40px;
+  margin-bottom: 60px;
   background-color: #f7f7f7;
   /* padding: 20px;
   padding-right: 40px;
   padding-left: 40px; 
   a shorthand */
-  padding: 20px and 40px;
+
   /* most of the time you use margin bottom but NOT BOTH TOP and bottom */
-  margin-bottom: 60px;
 }
 /* left size of color picker is always all of the grays no matter what color */
 
@@ -87,6 +89,7 @@ article {
 
 /* lets try an element selector */
 aside {
+  width: 500px;
   padding: 50px 0;
   background-color: #f7f7f7;
   /* how to make a border 
