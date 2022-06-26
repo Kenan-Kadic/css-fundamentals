@@ -65,6 +65,14 @@ h4 {
   text-align: center;
 }
 
+/* one way to center everything is a double margin auto */
+.container {
+  width: 800px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+
 .main-header {
   height: 80px;
   padding: 20px 40px;
@@ -81,6 +89,17 @@ h4 {
 
 .post-header {
   margin-bottom: 40px;
+}
+
+.post-image {
+  /* 100% means width of parent container - parent container is header here */
+  width: 100%;
+  /* if height is written inside HTML5 you need height auto to return the aspect ratio to normal 
+  THIS IS NOT NECESSARY if you are only assigning one values (height or width)
+  in the CSS file only
+  */
+
+  height: auto;
 }
 
 article {
