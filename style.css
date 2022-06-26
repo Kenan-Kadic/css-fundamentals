@@ -81,9 +81,13 @@ h4 {
   margin-bottom: 40px;
 }
 
+article {
+  padding-bottom: 60px;
+}
+
 /* lets try an element selector */
 aside {
-  padding-top: 50px 0;
+  padding: 50px 0;
   background-color: #f7f7f7;
   /* how to make a border 
   you can also do top and bottom here
